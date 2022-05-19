@@ -240,6 +240,8 @@ a{
         
         .input-container{
             width: 525px;
+            border: 1px solid #DBDDE0;
+    display: flex;
             border-radius: 100px;
             display: flex;
             justify-content: center;
@@ -293,6 +295,12 @@ a{
             border-radius: 5px;
             padding: 0 15px;
             margin-right: 10px;
+            margin-bottom: 15px;
+        }
+
+        .busqueda{
+            text-decoration: none;
+            color: #3c4043;
         }
 
         .buttons button:hover{
