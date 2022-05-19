@@ -1,9 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;;
 }
+
+nav a {
+    text-decoration: none;
+    color: #202124;
+}
+
+a{
+    color: blue;
+}
+
+
 
 
 @media screen and (min-width:576px)
@@ -17,6 +28,16 @@
         padding-right: 2rem;
         margin: 2rem;
         align-items: center;
+        list-style: none;
+    }
+
+    nav .navegation .menu-nav{
+        background-image: url('https://static.thenounproject.com/png/756729-200.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 2rem;
+        height: 2rem;
     }
 
     .google {
@@ -25,35 +46,301 @@
         align-items: flex-end;
         justify-content: center;
     }
-
-    #img__google {
-        width: 26.5rem;
+    main{
+        text-align: center;
     }
 
-    .container {
+    main .google{
+        width: 30rem;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+
+
+    main .google .img__google{
+        width: 272rem;
+    }
+    main .main-input{
+        width: 530px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    
+    main .input-container{
+        width: 525px;
+        border-radius: 100px;
         display: flex;
         justify-content: center;
-        flex-direction: column;
         align-items: center;
     }
+    
+    main .main-input input{
+        width: 450px;
+        height: 40px;
+        border: none;
+        outline: none;  
+    }
+    
+    main .input-container:hover{
+        box-shadow: 0 1px 6px 0 #20212447;    
+    }
+    
+    main .main-input .search{
+        background-image: url('https://img.icons8.com/fluency-systems-regular/48/000000/search--v2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 18px;
+        height: 18px;
+    }
+    
+    main .main-input .micro{
+        background-image: url('https://img.icons8.com/android/24/000000/microphone.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 18px;
+        height: 18px;
+    }
+
+    main .buttons{
+        width: 30vw;
+        margin: 0 auto;
+    }
+
+    main .buttons div{
+        display: inline-block;
+    }
+
+    main .buttons button{
+        height: 6vh;
+        background-color: #f8f9fa;
+        border: none;
+        font-size: 14px;
+        color: #3c4043;
+        border-radius: 5px;
+        padding: 0 15px;
+        margin-right: 10px;
+    }
+
+    main .buttons button:hover{
+        border: 1px solid #dadce0;
+        box-shadow: 1px #dadce0;
+        color: #202124;
+    }
+
+    footer{
+        width: 100%;
+        height: 10%;
+        position: absolute;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        background-color: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+    }
+
+    footer ul{
+        margin: 1rem;
+        list-style: none;
+        display: flex;
+        padding-left: 0;
+    }
+
+    footer .container-izq{
+        justify-content: left;
+    }
+
+    footer .container-der{
+        justify-content: right;
+
+    }
+
+    footer ul li a{
+        margin: .5rem;
+        color: #5f6368
+    }
+    
 }
 
-form{border:gray solid 1px;
-    width: 45rem;
-height: 4rem;
-/* border-radius: 0 25% 50% 25%;} */  }
 
-input{border: none;}
 
 
 @media screen and (min-width:768px)
 
 /*MEDIUM*/
-    {
-    body {
-        background-color: red;
-    }
 
+    {
+        .navegation {
+            display: flex;
+            justify-content: end;
+            gap: 2rem;
+            padding-right: 2rem;
+            margin: 2rem;
+            align-items: center;
+            list-style: none;
+        }
+    
+        .navegation .menu-nav{
+            background-image: url('https://static.thenounproject.com/png/756729-200.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .submenu{
+            background-color: #ffffff;
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .cuenta{
+            border-radius: 50px;
+        }
+
+    
+        .correo:hover{
+            text-decoration:underline;
+        }
+
+        .img:hover{
+            text-decoration:underline;
+        }
+
+        .google {
+            height: 30vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+        main{
+            text-align: center;
+        }
+
+        .google{
+            width: 30rem;
+            margin: 0 auto;
+            margin-bottom: 5rem;
+        }
+
+
+        .google .img__google{
+            width: 272rem;
+        }
+
+        .main-input{
+            width: 530px;
+            margin: 0 auto;
+            margin-bottom: 35px;
+        }
+        
+        .input-container{
+            width: 525px;
+            border: 1px solid #DBDDE0;
+    display: flex;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .main-input input{
+            width: 450px;
+            height: 40px;
+            border: none;
+            outline: none;  
+        }
+        
+        .input-container:hover{
+            box-shadow: 0 1px 6px 0 #20212447;    
+        }
+        
+        .main-input .search{
+            background-image: url('https://img.icons8.com/fluency-systems-regular/48/000000/search--v2.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .main-input .micro{
+            background-image: url('https://img.icons8.com/android/24/000000/microphone.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 18px;
+            height: 18px;
+        }
+
+        .buttons{
+            width: 30vw;
+            margin: 0 auto;
+        }
+
+        .buttons div{
+            display: inline-block;
+        }
+
+        .buttons button{
+            height: 6vh;
+            background-color: #f8f9fa;
+            border: none;
+            font-size: 14px;
+            color: #3c4043;
+            border-radius: 5px;
+            padding: 0 15px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+        }
+
+        .busqueda{
+            text-decoration: none;
+            color: #3c4043;
+        }
+
+        .buttons button:hover{
+            border: 1px solid #dadce0;
+            box-shadow: 1px #dadce0;
+            color: #202124;
+        }
+
+        footer{
+            width: 100%;
+            height: 10%;
+            position: absolute;
+            bottom: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            background-color: #f2f2f2;
+            border-top: 1px solid #e4e4e4;
+        }
+
+        footer ul{
+            margin: 1rem;
+            list-style: none;
+            display: flex;
+            padding-left: 0;
+        }
+
+        .container-izq{
+            justify-content: left;
+        }
+
+        .container-der{
+            justify-content: right;
+
+        }
+
+         ul li a{
+            margin: 1rem;
+            color: #5f6368
+        }
 }
 
 
@@ -61,11 +348,13 @@ input{border: none;}
 @media screen and (min-width:992px)
 
 /*LARGE*/
-    {}
+{}
 
 
-@media screen and (min-width:1200px) {}
+@media screen and (min-width:1200px) 
+{}
 
 
 
-@media screen and (min-width:1400px) {}
+@media screen and (min-width:1400px) 
+{}
